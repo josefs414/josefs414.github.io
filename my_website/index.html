@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <style>
+  mydiv 
+    body {color:blue;}
+    p {color: black; background-color: white;
+    margin-left: 600px; margin-right: 600px;}
+    h4 {background-color: yellow; margin-left: 650px; margin-right: 650px}
+     #gas
+	     { position: fixed; right: 0; bottom: 0; min-width: 100%; 
+        min-height: 100%; width: auto; height: auto;z-index: -10;}
+  </style>
+  <div id="mydiv">
+  <head>
+    <meta charset="utf-8">
+        <link href="icecream.css" rel="stylesheet" type="text/css">
+    <title>Home</title>
+  </head>
+  <body>
+    <h3>
+    <a style="color:blue;" href="index.html">Home</a>
+    <a style="color:blue;" href="portfolio.html">Portfolio</a>
+    <a style="color:blue;" href="aboutme.html">AboutMe</a>
+    <a style="color:blue;" href="resume.html">Resume</a>
+    <a style="color:blue;" href="tipsandtricks.html">Tips and Tricks</a>
+    </h3>
+    <h1>This is my Home Page!</h1>
+    <p>My name is Josef, and it is currently...</p>
+     <p id="demo">Thu Nov 01 2018 11:42:59 GMT-0700 (Pacific Daylight Time)</p>
+     <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to Refresh Date and Time.</button>
+<br>
+    <br>
+    <br>
+   <h4> **Warning** </h4>
+   <img src="images/stop.jpg" alt="a man holding a stop sign" height="150">
+   <br>
+   <p>Pressing the 'Forbidden Button" will destroy this page and its contents</p>
+   <br>
+   <button onclick="myFunction()">The Forbidden Button</button>
+    <img id="gas" src="images/gas.jpg!d" atl="background picture of as gas station">
+  </body>
+  </div>
+  <script>
+function myFunction() {
+    var x = document.getElementById("mydiv");
+    if (x.style.display === "none") {x.style.display = "block"; } else {x.style.display = "none";}}
+</script>
+</html>
+
